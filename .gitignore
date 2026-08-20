@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+venv/
+.venv/
+env/
+
+# Node.js
+node_modules/
+package-lock.json
+
+# Generated reports
+report_final.docx
+*.docx
+
+# Screenshots
+screenshots/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.lnk
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Archive (internal opencode logs)
+.opencode-archive/
+
+# Temporary files
+*.tmp
+*.temp
+~$*
