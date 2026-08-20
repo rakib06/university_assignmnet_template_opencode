@@ -2,6 +2,8 @@
 
 A complete template for university assignment development using **opencode**. Write code, take screenshots, generate a professional DOCX report — all from the command line.
 
+> **New here?** See the [Quick Start Guide](QUICKSTART.md) for a 5-minute overview.
+
 ---
 
 ## What This Template Does
