@@ -6,13 +6,38 @@ Get up and running with the assignment template in 5 minutes.
 
 ## Prerequisites
 
-- **Python 3.8+** — `python3 --version`
-- **Node.js/npm** — `node --version`
-- **opencode** — Installed and available in PATH
-- **pip packages:**
-  ```bash
-  pip install python-docx Pillow
-  ```
+### 1. WSL (Windows Subsystem for Linux)
+
+All tools run inside WSL. Install it first:
+
+```powershell
+# In PowerShell (Run as Administrator)
+wsl --install
+```
+
+Restart your PC, then open the **Ubuntu** app from the Start menu to complete setup.
+
+> **Why WSL?** Python, Node.js, opencode, and all build tools run natively inside the Linux environment. Access your Windows files via `/mnt/c/`.
+
+### 2. Install tools inside WSL
+
+Open the **Ubuntu terminal** and run:
+
+```bash
+# Update packages
+sudo apt update && sudo apt upgrade -y
+
+# Python
+sudo apt install -y python3 python3-pip
+
+# Node.js
+sudo apt install -y nodejs npm
+
+# opencode (see https://opencode.ai for install instructions)
+
+# Python packages
+pip install python-docx Pillow
+```
 
 ---
 
@@ -20,9 +45,18 @@ Get up and running with the assignment template in 5 minutes.
 
 ### 1. Copy the template
 
+Windows files are accessible under `/mnt/c/`. From the Ubuntu terminal:
+
 ```bash
-cp -r assignment-template/ ~/my-assignment/
+# Example: copy from a Windows folder to your home directory
+cp -r "/mnt/c/Users/you/Desktop/assignment-template/" ~/my-assignment/
 cd ~/my-assignment/
+```
+
+Or work directly from the Windows path:
+
+```bash
+cd "/mnt/c/Users/you/Desktop/assignment-template/"
 ```
 
 ### 2. Run the setup script

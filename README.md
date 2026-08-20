@@ -30,23 +30,30 @@ The generated report follows university standards:
 
 Before using this template, install the following:
 
-### 1. Python 3.8+
+### 1. WSL (Windows Subsystem for Linux)
 
-```bash
-# Check if Python is installed
-python3 --version
+All development tools run inside WSL. Install it first:
 
-# If not installed (Ubuntu/Debian):
-sudo apt update && sudo apt install python3 python3-pip
-
-# If not installed (macOS with Homebrew):
-brew install python3
-
-# If not installed (Windows):
-# Download from https://www.python.org/downloads/
+```powershell
+# In PowerShell (Run as Administrator)
+wsl --install
 ```
 
-### 2. Required Python Packages
+Restart your PC, then open the **Ubuntu** app from the Start menu to complete setup.
+
+Windows files are accessible under `/mnt/c/` from inside WSL.
+
+### 2. Python 3.8+ (inside WSL)
+
+```bash
+# From the Ubuntu terminal
+sudo apt update && sudo apt install -y python3 python3-pip
+
+# Verify installation
+python3 --version
+```
+
+### 3. Required Python Packages (inside WSL)
 
 ```bash
 pip install python-docx Pillow
@@ -55,37 +62,31 @@ pip install python-docx Pillow
 - `python-docx` — Generates .docx Word documents
 - `Pillow` — Handles image dimensions for proper sizing in the report
 
-### 3. opencode
+### 4. opencode (inside WSL)
 
 ```bash
 # Install opencode (see https://opencode.ai for instructions)
 # The template includes opencode.json configuration
 ```
 
-### 4. Node.js / npm (for .opencode plugins)
+### 5. Node.js / npm (inside WSL, for .opencode plugins)
 
 ```bash
-# Check if Node.js is installed
+# From the Ubuntu terminal
+sudo apt install -y nodejs npm
+
+# Verify installation
 node --version && npm --version
-
-# If not installed (Ubuntu/Debian):
-sudo apt install nodejs npm
-
-# If not installed (macOS with Homebrew):
-brew install node
-
-# If not installed (Windows):
-# Download from https://nodejs.org/
 ```
 
-### 5. Your Development Tool
+### 6. Your Development Tool
 
 Depending on your assignment:
-- **emu8086** — For 8086 assembly programs (Windows)
-- **GCC/G++** — For C/C++ programs
-- **Python interpreter** — For Python programs
-- **JDK** — For Java programs
-- **VS Code / other IDE** — For general development
+- **emu8086** — For 8086 assembly programs (runs on Windows, accessible from WSL)
+- **GCC/G++** — Install inside WSL: `sudo apt install -y gcc g++`
+- **Python interpreter** — Already installed in step 2
+- **JDK** — Install inside WSL: `sudo apt install -y default-jdk`
+- **VS Code / other IDE** — Optional, for editing files
 
 ---
 
@@ -134,15 +135,17 @@ assignment-template/
 ### Step 1: Copy the Template
 
 ```bash
+# From inside the Ubuntu/WSL terminal
 # Copy to your new assignment folder
-cp -r assignment-template/ /path/to/your/new-assignment/
-cd /path/to/your/new-assignment/
+cp -r "/mnt/c/Users/your-username/Desktop/assignment-template/" ~/my-assignment/
+cd ~/my-assignment/
 ```
 
-Or on Windows (in File Explorer):
-- Copy the `assignment-template` folder
-- Paste it into your course folder
-- Rename it to match your assignment
+Or work directly from the Windows path:
+
+```bash
+cd "/mnt/c/Users/your-username/Desktop/assignment-template/"
+```
 
 ### Step 2: Run the Setup Script
 
