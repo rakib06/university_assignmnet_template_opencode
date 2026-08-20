@@ -11,15 +11,15 @@ Write the code for my assignment. Read templates/task.md for the requirements.
 The assignment is about [brief description]. Use [platform/language].
 ```
 
-## 2. Write Assembly Code (emu8086)
+## 2. Write Code in Specific Language
 
 ```
-Write an 8086 assembly program for emu8086 that [describe what it should do].
+Write the code for my assignment using [language/tool].
 The program should:
 - Accept user input at runtime
 - Display results on screen
 - Use proper comments
-- Follow emu8086-compatible syntax (ORG 100h, .DATA, .CODE)
+- Follow standard conventions for [language]
 ```
 
 ## 3. Generate DOCX Report
@@ -43,7 +43,7 @@ Break the code into logical segments and for each segment provide:
 ## 5. Fix Compilation Error
 
 ```
-I got this error when building my code in emu8086:
+I got this error when building my code:
 [paste error here]
 Please fix the code and explain what was wrong.
 ```
@@ -99,9 +99,8 @@ Start with step 1.
 ## 11. Customize Report for Different Assignment Type
 
 ```
-My assignment is not about assembly. It is about [Python/C/Java/network security/etc.].
-Please adjust the report template accordingly:
-- Replace "Assembly Instructions" with relevant section
+My assignment uses [language/tool]. Please adjust the report template accordingly:
+- Replace language-specific sections with relevant content for [language]
 - Adjust code explanation sections for [language]
 - Keep the same academic formatting
 ```

@@ -33,8 +33,7 @@ The tool saves screenshots to `screenshots/` as PNG files with timestamps.
 - Write clean, well-commented code
 - Use meaningful variable names
 - Add a program header with: title, student name, ID, course, platform
-- For assembly: use emu8086-compatible syntax
-- For any language: follow standard conventions for that language
+- Follow standard conventions for the language being used
 
 ## Report Generation Rules
 

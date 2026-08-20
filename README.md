@@ -81,12 +81,13 @@ node --version && npm --version
 
 ### 6. Your Development Tool
 
-Depending on your assignment:
-- **emu8086** — For 8086 assembly programs (runs on Windows, accessible from WSL)
-- **GCC/G++** — Install inside WSL: `sudo apt install -y gcc g++`
+Install whatever your assignment requires inside WSL:
+- **GCC/G++** — `sudo apt install -y gcc g++`
 - **Python interpreter** — Already installed in step 2
-- **JDK** — Install inside WSL: `sudo apt install -y default-jdk`
+- **JDK** — `sudo apt install -y default-jdk`
 - **VS Code / other IDE** — Optional, for editing files
+
+Check your assignment brief to see which tools you need.
 
 ---
 
@@ -163,7 +164,7 @@ The script will ask you for:
 | Course Code | Yes | MCS2214 |
 | Course Name | Yes | Advanced Reverse Engineering |
 | Assignment Title | Yes | Calculate the Sum of the First N Fibonacci Numbers |
-| Platform/Tool | Yes | emu8086 |
+| Platform/Tool | Yes | [e.g., VS Code, GCC, Python, emu8086] |
 | Faculty Name | Optional | Dr. Smith |
 | Faculty Designation | Optional | Associate Professor |
 | Semester | Optional | Spring 2026 |
@@ -207,10 +208,7 @@ The AI will:
 
 ### Step 5: Build and Run
 
-Copy the generated code to your development tool:
-- **emu8086**: Paste into the editor, click Emulate, then Run
-- **Python**: Run with `python3 filename.py`
-- **C/C++**: Compile with `gcc filename.c -o output`, then `./output`
+Use your development tool to build and run the code. Check your assignment brief for the expected build and run commands.
 
 ### Step 6: Take Screenshots
 

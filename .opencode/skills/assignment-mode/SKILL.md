@@ -13,7 +13,7 @@ Activate this skill when the user:
 - Mentions "assignment", "coursework", "lab report", "homework", "submission"
 - Asks to generate a DOCX report
 - Asks to write code for a university task
-- Mentions emu8086, assembly, or any course-specific tool
+- Mentions any course-specific tool or language
 - Says "generate report", "create docx", "make report"
 - Asks about assignment formatting or structure
 
@@ -26,7 +26,7 @@ Activate this skill when the user:
 
 ### Phase 2: Code Development
 1. Write the source code in the appropriate language
-2. For assembly (emu8086): use ORG 100h, .DATA/.CODE structure
+2. Follow the conventions of the chosen language
 3. Add proper comments and program header
 4. Test by asking user to build and run
 

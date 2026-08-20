@@ -147,7 +147,7 @@ def main():
     config["course_code"] = ask("Course Code (e.g., MCS2214)", required=True)
     config["course_name"] = ask("Course Name (e.g., Advanced Reverse Engineering)", required=True)
     config["assignment_title"] = ask("Assignment Title", required=True)
-    config["platform"] = ask("Platform / Tool (e.g., emu8086, Python, VS Code)", default="emu8086")
+    config["platform"] = ask("Platform / Tool (e.g., VS Code, GCC, Python, emu8086)", default="")
     print()
 
     print("[3/3] Optional Details (press Enter to skip)")

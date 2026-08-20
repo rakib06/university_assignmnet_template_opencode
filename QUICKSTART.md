@@ -91,12 +91,7 @@ Write the code for my assignment. Read templates/task.md for requirements.
 
 ### Build & Run
 
-Use your development tool:
-| Platform | Command |
-|---|---|
-| emu8086 | Paste into editor, click Emulate → Run |
-| Python | `python3 filename.py` |
-| C/C++ | `gcc filename.c -o output && ./output` |
+Use your development tool to build and run the code. Check your assignment brief for the expected build and run commands.
 
 ### Take Screenshots
 

@@ -534,9 +534,8 @@ def build_report():
     # ── References ───────────────────────────────────────────────────
     add_heading(doc, "References", level=1)
     refs = [
-        "Intel Corporation. Intel 8086/8088 User's Manual. 1979.",
-        "Microsoft Corporation. MS-DOS Programmer's Reference. 1993.",
-        "emu8086 — Microprocessor Emulator. https://emu8086.com",
+        "[Add your primary language/tool reference here]",
+        "[Add secondary reference here]",
     ]
     for i, ref in enumerate(refs, 1):
         p = doc.add_paragraph(f"[{i}] {ref}")
